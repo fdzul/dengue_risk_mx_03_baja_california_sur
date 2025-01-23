@@ -84,7 +84,9 @@ loc <- rgeomex::extract_locality(cve_edo = "03",
                                  locality = "La Paz")
 
 # Step 2. Extract the hotspots ####
-hotspots <- denmex::den_hotspots[loc, ]
+#hotspots <- denmex::den_hotspots[loc, ]
+hotspots <- hotspotsdata::hotspots_hex[loc,]
+
 mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
@@ -246,7 +248,8 @@ loc <- rgeomex::extract_locality(cve_edo = "03",
                                  locality = "San Jose los cabos")
 
 # Step 2. Extract the hotspots ####
-hotspots <- denmex::den_hotspots[loc, ]
+#hotspots <- denmex::den_hotspots[loc, ]
+hotspots <- hotspotsdata::hotspots_hex[loc,]
 mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
@@ -408,7 +411,8 @@ loc <- rgeomex::extract_locality(cve_edo = "03",
                                  locality = "Cabos San Lucas")
 
 # Step 2. Extract the hotspots ####
-hotspots <- denmex::den_hotspots[loc, ]
+#hotspots <- denmex::den_hotspots[loc, ]
+hotspots <- hotspotsdata::hotspots_hex[loc,]
 mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
